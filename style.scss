@@ -1,0 +1,283 @@
+:root {
+  --color-orange: #BF7506;
+  --border-color: #DD9C3C;
+}
+
+html {
+  font-size: 12px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+p {margin: 0}
+
+body {
+  background-color: lightgray;
+  font-family: 'Inter';
+  font-weight: 400;
+  padding: 0 0.5em;
+  line-height: 1.5;
+}
+
+.main-canvas {
+  width: 870px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  font-size: 1.33rem;
+  align-items: center;
+  justify-content: space-between;
+
+
+  svg {
+    width: 2em;
+    height: 2em;
+  }
+
+
+  .nav-ul {
+    color: var(--color-orange);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+    .nav_item {
+      padding: 0 1em;
+    }
+
+
+    .nav_item.active {
+      font-weight: 700;
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    line-height: 1.2;
+  }
+
+}
+
+.islamov {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  img {
+    width: 17.66rem;
+    height: 20rem;
+  }
+
+  .container-priv {
+    display: flex;
+    flex-wrap: wrap;
+    width:510px;
+
+    .rezume {
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      font-size: 1.33rem;
+      line-height: 3.33rem;
+    }
+
+    .social {
+      img {
+        width: 3.33rem;
+        height: 3.33rem;
+
+      }
+    }
+    .priv {
+      font-size: 4rem;
+      font-weight: 700;
+      color: black;
+      margin:0;
+    }
+    p { margin:8px 0 0 ;}
+  }
+
+  .container-col {
+    flex-direction: column;
+  }
+
+
+
+  p {
+    font-size: 2rem;
+    color: black;
+
+    span {
+      color: var(--color-orange);
+    }
+  }
+}
+
+.tehno-items-container {
+  display: flex;
+
+  .tehnology {
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 5px 8px 4px;
+    margin-left: 4px;
+  }
+
+
+  li:first-child {
+    margin-left: 0;
+  }
+}
+
+.last_projects {
+  .header {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 125%;
+    color: var(--color-orange);
+
+    letter-spacing: -0.03em;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content:space-between;
+
+    .card {
+      width: 399px;
+
+   /*   .tehno-items-container {
+        display: flex;
+
+        .tehnology {
+
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 150%;
+          border: 1px solid var(--border-color);
+          border-radius: 4px;
+          padding: 5px 8px 4px;
+          margin-left: 4px;
+        }
+
+
+        li:first-child {
+          margin-left: 0;
+        }
+      }*/
+
+      p {
+        font-weight: 400;
+        font-size: 1.33rem;
+        line-height: 150%;
+      }
+
+      .cod-ref {
+        display: flex;
+        li {
+          font-weight: 700;
+          font-size: 1.33rem;
+          line-height: 2rem;
+          color: #211B12;
+          border-bottom: 2px solid var(--border-color);
+          margin-left:25px;
+          padding:  7px 0 5px;
+        }
+        svg {
+          width:2rem;
+          height:2rem;
+        }
+        span {
+          padding:  0px 2px 2px;
+          line-height: 1;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .card-header {
+      color: var(--color-orange);
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 135%;
+      letter-spacing: -0.02em;
+
+    }
+  }
+}
+
+.person {
+  margin-top:120px;
+}
+
+.photo-description {
+  display: flex;
+  justify-content:space-between;
+  p, img {margin-top:8px}
+
+  .card {width: 454px}
+
+  .header {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 135%;
+    letter-spacing: -0.02em;
+
+  }
+
+  .FIO  {
+    font-weight: 700;
+    font-size: 2.66rem;
+    line-height: 125%;
+    /* identical to box height, or 40px */
+
+    letter-spacing: -0.03em;
+    color:var(--color-orange);
+  }
+
+  .base-text {
+    font-weight: 400;
+    font-size: 1.33rem;
+    line-height: 150%;
+  }
+  .learn {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+    color: #DD9C3C;
+  }
+}
+
+.priziv {
+  margin-top: 40px;
+  p {
+    font-weight: 700;
+    font-size: 1.33rem;
+    line-height: 135%;
+
+    letter-spacing: -0.02em;
+
+    color: #211B12;
+  }
+}
